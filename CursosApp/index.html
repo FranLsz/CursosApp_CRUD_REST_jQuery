@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cursos</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="manageCurso">
+            <div class="manage_title">Administrar cursos</div>
+            <div class="search_box">
+                <label for="search_input" class="search_label">Buscar</label>
+                <input type="text" id="search_input"/>
+
+            </div>
+            <div id="cursos">
+                <table>
+                    <thead class="table_header">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Duración</th>
+                        <th><button type="button" id="btnRefresh" class="btn_refresh"><i class="material-icons">autorenew</i></button></th>
+                    </tr>
+                    </thead>
+                    <tbody class="table_rows" id="data_location"></tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="addCurso">
+            <div class="addBox" id="addBox">
+                <div class="add_title" id="add_title">Nuevo curso</div>
+                <input type="hidden" id="edit_id" value="" />
+                <div class="inputControl">
+                    <label for="add_nombre">Nombre</label>
+                    <input type="text" id="add_nombre" />
+                </div>
+                <div class="inputControl">
+                    <label for="add_duracion">Duración</label>
+                    <input type="text" id="add_duracion" />
+                </div>
+                <button type="button" id="btnAdd">Crear</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/curso.js"></script>
+</body>
+</html>
