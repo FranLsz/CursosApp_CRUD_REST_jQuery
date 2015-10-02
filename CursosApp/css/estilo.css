@@ -21,7 +21,7 @@ html, body {
 }
 
     .wrapper .addCurso {
-        width: 38%;
+        width: 35%;
         display: inline-block;
         float: left;
     }
@@ -30,6 +30,7 @@ html, body {
             width: 100%;
             display: block;
             margin: 0 auto;
+            display: none;
         }
 
             .wrapper .addCurso .addBox .add_title {
@@ -91,10 +92,43 @@ html, body {
         }
 
         .wrapper .manageCurso .search_box {
-            
-
+            width: 100%;
+            padding-top: 30px;
         }
 
+            .wrapper .manageCurso .search_box .search_label {
+                font-size: 220%;
+            }
+
+            .wrapper .manageCurso .search_box #search_input {
+                border: 0;
+                height: 30px;
+                font-size: 200%;
+                padding: 4px;
+                color: rgb(51,51,51);
+                margin-top: 4px;
+            }
+
+                .wrapper .manageCurso .search_box #search_input:focus {
+                    outline: none;
+                }
+
+        .wrapper .manageCurso .search_btn {
+            cursor: pointer;
+            display: inline-block;
+            background-color: white;
+            color: black;
+            height: 28px;
+            padding: 5px;
+            margin-left: -4px;
+            margin-top: -5px;
+        }
+        .wrapper .manageCurso  > i {
+            font-size: 40px;
+            margin-left: 38%;
+            margin-top: 20px;
+            cursor: pointer;
+        }
 
 
         .wrapper .manageCurso table {

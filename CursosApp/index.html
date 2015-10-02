@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="scripts/jquery-2.1.4.min.js"></script>
     <link href="css/estilo.css" rel="stylesheet" />
 </head>
 <body>
@@ -13,22 +14,23 @@
             <div class="manage_title">Administrar cursos</div>
             <div class="search_box">
                 <label for="search_input" class="search_label">Buscar</label>
-                <input type="text" id="search_input"/>
-
+                <input type="text" id="search_input" />
+                <div class="search_btn" id="search_btn"><i class="material-icons">arrow_forward</i></div>
+                
             </div>
             <div id="cursos">
                 <table>
                     <thead class="table_header">
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Duración</th>
-                        <th><button type="button" id="btnRefresh" class="btn_refresh"><i class="material-icons">autorenew</i></button></th>
-                    </tr>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Duración</th>
+                            <th><button type="button" id="btnRefresh" class="btn_refresh"><i class="material-icons">autorenew</i></button></th>
+                        </tr>
                     </thead>
                     <tbody class="table_rows" id="data_location"></tbody>
                 </table>
             </div>
-
+            <i id="showAddBox" class="material-icons">add_circle</i>
         </div>
         <div class="addCurso">
             <div class="addBox" id="addBox">
