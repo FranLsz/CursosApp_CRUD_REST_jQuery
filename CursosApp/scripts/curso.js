@@ -82,7 +82,7 @@ function filtrarPorNombre() {
 
     }
 
-    
+
 
 }
 $(document).ready(function () {
