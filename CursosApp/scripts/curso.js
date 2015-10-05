@@ -11,7 +11,7 @@ function borrarDatos(o) {
     $.ajax({
         url: auxUrl,
         type: "DELETE",
-        success: function (res) {
+        success: function () {
             loadAllCursos();
         }
     });
@@ -55,7 +55,7 @@ function addCurso() {
     $.ajax({
         type: "POST",
         url: url,
-        success: function (res) {
+        success: function () {
             loadAllCursos();
             $("#add_nombre").val(" ");
             $("#add_duracion").val(" ");
